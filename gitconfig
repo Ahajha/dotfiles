@@ -1,0 +1,11 @@
+[user]
+	name = Alex Trotta
+	email = ahajha@gmail.com
+[branch "main"]
+	pushRemote = NOPE
+[init]
+	defaultBranch = main
+[pile]
+	cleanupRemoteOnSubmitFailure = true
+[pull]
+	rebase = true
