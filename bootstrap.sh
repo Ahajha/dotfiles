@@ -7,3 +7,5 @@ rm ~/.config/Code/User/keybindings.json
 rm ~/.config/Code/User/settings.json
 ln -s $PWD/vscode/keybindings.json ~/.config/Code/User/keybindings.json
 ln -s $PWD/vscode/settings.json ~/.config/Code/User/settings.json
+
+./vscode/install-extensions.sh
