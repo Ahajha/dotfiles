@@ -9,5 +9,7 @@
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "window.commandCenter": false,
-    "window.menuBarVisibility": "compact"
+    "window.menuBarVisibility": "compact",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true
 }
