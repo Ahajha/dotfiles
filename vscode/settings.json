@@ -1,0 +1,13 @@
+{
+    "update.showReleaseNotes": false,
+    "workbench.startupEditor": "none",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
+    "workbench.sideBar.location": "right",
+    "chat.agentsControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "compact"
+}
