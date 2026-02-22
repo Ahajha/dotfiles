@@ -23,6 +23,7 @@
     "workbench.activityBar.location": "hidden",
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.editor.empty.hint": "hidden",
     "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.tabSizing": "fixed",
     "workbench.layoutControl.enabled": false,
