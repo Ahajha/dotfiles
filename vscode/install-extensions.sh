@@ -1,7 +1,16 @@
 # Can dump current extensions with `code --list-extensions`
 
-code --install-extension bazelbuild.vscode-bazel
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
-code --install-extension ms-python.vscode-python-envs
-code --install-extension ms-vscode.cpptools
+extensions=(
+bazelbuild.vscode-bazel
+charliermarsh.ruff
+llvm-vs-code-extensions.vscode-clangd
+ms-python.isort
+ms-python.python
+ms-python.vscode-pylance
+ms-python.vscode-python-envs
+ms-vscode.cpptools
+)
+
+for extension in ${extensions[@]}; do
+    code --install-extension $extension
+done
