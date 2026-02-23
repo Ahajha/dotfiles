@@ -1,5 +1,7 @@
 # Can dump current extensions with `code --list-extensions`
 
+set -euo pipefail
+
 extensions=(
 bazelbuild.vscode-bazel
 charliermarsh.ruff
