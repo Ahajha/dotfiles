@@ -1,4 +1,6 @@
 {
+    "bazel.buildifierFixOnFormat": true,
+    "bazel.enableCodeLens": true,
     "chat.agentsControl.enabled": false,
     "debug.allowBreakpointsEverywhere": true,
     "diffEditor.experimental.showMoves": true,
@@ -17,6 +19,7 @@
     "search.followSymlinks": false,
     "search.sortOrder": "countDescending",
     "telemetry.telemetryLevel": "crash",
+    "terminal.integrated.initialHint": false,
     "update.showReleaseNotes": false,
     "window.commandCenter": false,
     "window.menuBarVisibility": "compact",
