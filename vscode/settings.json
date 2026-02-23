@@ -1,6 +1,7 @@
 {
     "bazel.buildifierFixOnFormat": true,
     "bazel.enableCodeLens": true,
+    "C_Cpp.intelliSenseEngine": "disabled",
     "chat.agentsControl.enabled": false,
     "debug.allowBreakpointsEverywhere": true,
     "diffEditor.experimental.showMoves": true,
