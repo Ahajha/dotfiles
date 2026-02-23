@@ -2,9 +2,6 @@
 
 set -euo pipefail
 
-mkdir -p bin
-
-# bazelisk
 readonly bazelisk_version=1.28.1
 readonly buildifier_version=8.5.1
 
@@ -15,8 +12,8 @@ else
     exit 1
 fi
 
-curl -L --output $PWD/bin/bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazelisk_version}/bazelisk-${arch}"
-curl -L --output $PWD/bin/buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
+curl -L --output ~/.local/bin/bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazelisk_version}/bazelisk-${arch}"
+curl -L --output ~/.local/bin/buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
 
-chmod +x $PWD/bin/bazel
-chmod +x $PWD/bin/buildifier
+chmod +x ~/.local/bin/bazel
+chmod +x ~/.local/bin/buildifier
