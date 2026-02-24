@@ -15,7 +15,7 @@ fi
 
 curl -L --output ~/.local/bin/bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazelisk_version}/bazelisk-${arch}"
 curl -L --output ~/.local/bin/buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
-curl -L --output ~/.local/bin/starpls https://github.com/withered-magic/starpls/releases/download/v${starpls_version}/starpls-${arch}
+curl -L --output ~/.local/bin/starpls "https://github.com/withered-magic/starpls/releases/download/v${starpls_version}/starpls-${arch}"
 
 chmod +x ~/.local/bin/bazel
 chmod +x ~/.local/bin/buildifier
