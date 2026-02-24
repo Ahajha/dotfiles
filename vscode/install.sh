@@ -17,6 +17,11 @@ for extension in ${extensions[@]}; do
     code --install-extension $extension
 done
 
+# One that needs to be installed manually
+mkdir -p downloads
+curl -L --output $PWD/downloads/bazelrc-lsp.vsix https://github.com/salesforce-misc/bazelrc-lsp/releases/download/v0.2.6/bazelrc-lsp-ubuntu-0.2.6.vsix
+code --install-extension $PWD/downloads/bazelrc-lsp.vsix
+
 # A bit manual for now but this should be okay
 mkdir -p ~/.config/Code/User
 rm ~/.config/Code/User/keybindings.json

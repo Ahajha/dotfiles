@@ -1,6 +1,8 @@
 {
     "bazel.buildifierFixOnFormat": true,
     "bazel.enableCodeLens": true,
+    "bazel.lsp.command": "starpls",
+    "bazelrc.bazelVersion": "9.0.0",
     "C_Cpp.intelliSenseEngine": "disabled",
     "chat.agentsControl.enabled": false,
     "diffEditor.experimental.showMoves": true,
