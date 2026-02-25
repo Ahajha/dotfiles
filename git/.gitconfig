@@ -13,3 +13,8 @@
 	co = checkout
 	pr = submitpr
 	prm = submitpr --merge-squash
+[rerere]
+	enabled = true
+	autoupdate = true
+[advice]
+	skippedCherryPicks = false
