@@ -3,6 +3,7 @@
 
 set -euo pipefail
 
+./apt/install.sh
 ./bash/install.sh
 ./bazel/install.sh
 ./git/install.sh
