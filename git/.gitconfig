@@ -11,6 +11,9 @@
 	rebase = true
 [alias]
 	co = checkout
+	cp = cherry-pick
+	cpr = "!git cherry-pick $1 && git submitpr"
+	cprm = "!git cherry-pick $1 && git submitpr --merge-squash"
 	pom = push origin main
 	pr = submitpr
 	prm = submitpr --merge-squash
