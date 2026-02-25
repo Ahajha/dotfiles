@@ -1,0 +1,3 @@
+[submodule "git/git-pile"]
+	path = git/git-pile
+	url = https://github.com/keith/git-pile.git

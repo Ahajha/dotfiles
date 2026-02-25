@@ -73,3 +73,5 @@ fi
 ## custom stuff
 
 alias g=git
+
+export PATH="~/dotfiles/git/git-pile/bin:$PATH"
