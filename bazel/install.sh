@@ -16,7 +16,7 @@ fi
 function install() {
     # $1: command
     # $2: url to download
-    command -v $1 || curl -L --output ~/.local/bin/$1 $2 && chmod +x ~/.local/bin/$1
+    command -v $1 || (curl -L --output ~/.local/bin/$1 $2 && chmod +x ~/.local/bin/$1)
 }
 
 install bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazelisk_version}/bazelisk-${arch}"
