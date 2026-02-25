@@ -66,12 +66,20 @@ fi
 
 ## completion
 
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    source /etc/bash_completion
+fi
+
 if [ -f ~/dotfiles/downloads/bazel-complete.bash ]; then
     source ~/dotfiles/downloads/bazel-complete.bash
 fi
 
 ## custom stuff
 
+# alias g to git, enable completions as well
 alias g=git
+# this might be fragile
+source /usr/share/bash-completion/completions/git
+complete -o bashdefault -o default -o nospace -F __git_wrap__git_main g
 
 export PATH="~/dotfiles/git/git-pile/bin:$PATH"
