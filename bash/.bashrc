@@ -85,3 +85,7 @@ fi
 ## custom stuff
 
 alias g=git
+
+if [ -f ~/dotfiles/downloads/bazel-complete.bash ]; then
+    source ~/dotfiles/downloads/bazel-complete.bash
+fi
