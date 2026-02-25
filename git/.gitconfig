@@ -11,6 +11,7 @@
 	rebase = true
 [alias]
 	co = checkout
+	pom = push origin main
 	pr = submitpr
 	prm = submitpr --merge-squash
 [rerere]
