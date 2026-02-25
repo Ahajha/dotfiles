@@ -9,3 +9,6 @@
 	cleanupRemoteOnSubmitFailure = true
 [pull]
 	rebase = true
+[alias]
+	pr = submitpr
+	prm = submitpr --merge-squash
