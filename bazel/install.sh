@@ -13,10 +13,12 @@ else
     exit 1
 fi
 
-curl -L --output ~/.local/bin/bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazelisk_version}/bazelisk-${arch}"
-curl -L --output ~/.local/bin/buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
-curl -L --output ~/.local/bin/starpls "https://github.com/withered-magic/starpls/releases/download/v${starpls_version}/starpls-${arch}"
+function install() {
+    # $1: command
+    # $2: url to download
+    command -v $1 || curl -L --output ~/.local/bin/$1 $2 && chmod +x ~/.local/bin/$1
+}
 
-chmod +x ~/.local/bin/bazel
-chmod +x ~/.local/bin/buildifier
-chmod +x ~/.local/bin/starpls
+install bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazelisk_version}/bazelisk-${arch}"
+install buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
+install starpls "https://github.com/withered-magic/starpls/releases/download/v${starpls_version}/starpls-${arch}"
