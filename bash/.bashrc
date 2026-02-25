@@ -82,4 +82,4 @@ alias g=git
 source /usr/share/bash-completion/completions/git
 complete -o bashdefault -o default -o nospace -F __git_wrap__git_main g
 
-export PATH="~/dotfiles/git/git-pile/bin:$PATH"
+export PATH="$PATH:$HOME/dotfiles/git/git-pile/bin"
