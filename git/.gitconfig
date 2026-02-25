@@ -10,5 +10,6 @@
 [pull]
 	rebase = true
 [alias]
+	co = checkout
 	pr = submitpr
 	prm = submitpr --merge-squash
