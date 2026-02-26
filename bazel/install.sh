@@ -23,4 +23,5 @@ install bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazel
 install buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
 install starpls "https://github.com/withered-magic/starpls/releases/download/v${starpls_version}/starpls-${arch}"
 
+mkdir -p downloads
 bazel help completion bash > downloads/bazel-complete.bash
