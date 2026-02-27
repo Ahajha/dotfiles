@@ -23,6 +23,7 @@ install bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazel
 install buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
 install starpls "https://github.com/withered-magic/starpls/releases/download/v${starpls_version}/starpls-${arch}"
 
+rm -f ~/.local/bin/bazelisk
 ln -s ~/.local/bin/bazel ~/.local/bin/bazelisk
 
 mkdir -p downloads
