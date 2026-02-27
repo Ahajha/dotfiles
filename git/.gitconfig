@@ -12,8 +12,8 @@
 [alias]
 	co = checkout
 	cp = cherry-pick
-	cpr = "!git cherry-pick $1 && git submitpr"
-	cprm = "!git cherry-pick $1 && git submitpr --merge-squash"
+	cpr = "!f() { git cherry-pick \"$1\" && git submitpr; }; f"
+	cprm = "!f() { git cherry-pick \"$1\" && git submitpr --merge-squash; }; f"
 	pom = push origin main
 	pr = submitpr
 	prm = submitpr --merge-squash
