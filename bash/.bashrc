@@ -13,7 +13,7 @@ HISTSIZE=
 HISTFILESIZE=
 
 # ignore some commands
-HISTIGNORE="ls:exit:history"
+HISTIGNORE="exi:exit:history"
 
 ## checkwinsize
 
@@ -85,3 +85,6 @@ complete -o bashdefault -o default -o nospace -F __git_wrap__git_main g
 export PATH="$PATH:$HOME/dotfiles/git/git-pile/bin"
 
 GIT_PILE_PREFIX="trotta/"
+
+# common typo
+alias exi=exit
