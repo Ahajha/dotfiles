@@ -7,4 +7,5 @@ set -euo pipefail
 ./bash/install.sh
 ./bazel/install.sh
 ./git/install.sh
+./node/install.sh
 ./vscode/install.sh
