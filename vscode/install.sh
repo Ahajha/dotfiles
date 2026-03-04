@@ -6,7 +6,6 @@ extensions=(
 bazelbuild.vscode-bazel
 charliermarsh.ruff
 llvm-vs-code-extensions.vscode-clangd
-ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
 ms-python.vscode-python-envs

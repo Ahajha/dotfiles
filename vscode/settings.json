@@ -1,4 +1,11 @@
 {
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnSave": true
+    },
     "bazel.buildifierFixOnFormat": true,
     "bazel.enableCodeLens": true,
     "bazel.lsp.command": "starpls",
@@ -10,6 +17,9 @@
     "diffEditor.hideUnchangedRegions.enabled": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.find.addExtraSpaceOnTop": false,
+    "ruff.interpreter": [
+        "python3"
+    ],
     "editor.formatOnSave": true,
     "explorer.confirmDelete": false,
     "files.insertFinalNewline": true,
