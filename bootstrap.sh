@@ -9,4 +9,5 @@ set -euo pipefail
 ./git/install.sh
 ./gnome/install.sh
 ./node/install.sh
+./python/install.sh
 ./vscode/install.sh
