@@ -76,15 +76,17 @@ fi
 
 ## custom stuff
 
-# alias g to git, enable completions as well
+# alias g and gi to git, enable completions as well
 alias g=git
+alias gi=git
 # this might be fragile
 source /usr/share/bash-completion/completions/git
 complete -o bashdefault -o default -o nospace -F __git_wrap__git_main g
+complete -o bashdefault -o default -o nospace -F __git_wrap__git_main gi
 
 export PATH="$PATH:$HOME/dotfiles/git/git-pile/bin"
 
-GIT_PILE_PREFIX="trotta/"
+export GIT_PILE_PREFIX="trotta/"
 
 # common typo
 alias exi=exit
