@@ -16,7 +16,9 @@
 	cprm = "!f() { git cherry-pick \"$1\" && git submitpr --merge-squash; }; f"
 	pom = push origin main
 	pr = submitpr
+	prd = submitpr --draft
 	prm = submitpr --merge-squash
+	up = "!f() { git updatepr HEAD~${1:-1}; }; f"
 [rerere]
 	enabled = true
 	autoupdate = true
