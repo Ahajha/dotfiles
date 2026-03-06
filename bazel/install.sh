@@ -22,7 +22,13 @@ function install() {
 install bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazelisk_version}/bazelisk-${arch}"
 install buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
 install buildozer "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildozer-${arch}"
-install starpls "https://github.com/withered-magic/starpls/releases/download/v${starpls_version}/starpls-${arch}"
+
+# Need a very recent version to support go-to-definition in newer bazel versions
+# Can go back to a prebuilt binary if >0.1.22 is released.
+cd $PWD/bazel/starpls
+bazel build -c opt --experimental_convenience_symlinks=normal //crates/starpls
+cp bazel-bin/crates/starpls/starpls ~/.local/bin/starpls
+cd - >/dev/null
 
 rm -f ~/.local/bin/bazelisk
 ln -s ~/.local/bin/bazel ~/.local/bin/bazelisk

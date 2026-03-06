@@ -1,3 +1,6 @@
 [submodule "git/git-pile"]
 	path = git/git-pile
 	url = https://github.com/keith/git-pile.git
+[submodule "bazel/starpls"]
+	path = bazel/starpls
+	url = https://github.com/withered-magic/starpls.git
