@@ -27,7 +27,8 @@ install buildozer "https://github.com/bazelbuild/buildtools/releases/download/v$
 # Can go back to a prebuilt binary if >0.1.22 is released.
 cd $PWD/bazel/starpls
 bazel build -c opt --experimental_convenience_symlinks=normal //crates/starpls
-cp bazel-bin/crates/starpls/starpls ~/.local/bin/starpls
+# This can fail if the server is already running somewhere else
+cp bazel-bin/crates/starpls/starpls ~/.local/bin/starpls || true
 cd - >/dev/null
 
 rm -f ~/.local/bin/bazelisk
