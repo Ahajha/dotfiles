@@ -29,3 +29,11 @@
 	skippedCherryPicks = false
 [rebase]
 	autoStash = true
+[diff]
+    tool = vscode
+[merge]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
