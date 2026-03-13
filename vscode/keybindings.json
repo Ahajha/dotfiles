@@ -57,5 +57,14 @@
     {
         "key": "ctrl+shift+b",
         "command": "bazel.goToBuildFile"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "workbench.files.action.collapseExplorerFolders"
     }
 ]
