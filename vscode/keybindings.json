@@ -65,6 +65,7 @@
     },
     {
         "key": "ctrl+shift+c",
-        "command": "workbench.files.action.collapseExplorerFolders"
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "!terminalFocus"
     }
 ]
