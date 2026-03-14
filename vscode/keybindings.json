@@ -1,71 +1,71 @@
 [
     {
-        "key": "ctrl+o",
         "command": "-workbench.action.files.openFile",
+        "key": "ctrl+o",
         "when": "true"
     },
     {
-        "key": "ctrl+o",
         "command": "workbench.action.files.openFolder",
+        "key": "ctrl+o",
         "when": "openFolderWorkspaceSupport"
     },
     {
-        "key": "ctrl+k ctrl+o",
         "command": "-workbench.action.files.openFolder",
+        "key": "ctrl+k ctrl+o",
         "when": "openFolderWorkspaceSupport"
     },
     {
-        "key": "ctrl+d",
         "command": "-editor.action.addSelectionToNextFindMatch",
+        "key": "ctrl+d",
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+d",
         "command": "-notebook.addFindMatchToSelection",
+        "key": "ctrl+d",
         "when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
     },
     {
-        "key": "ctrl+d",
         "command": "editor.action.revealDefinition",
+        "key": "ctrl+d",
         "when": "editorHasDefinitionProvider && editorTextFocus"
     },
     {
-        "key": "f12",
         "command": "-editor.action.revealDefinition",
+        "key": "f12",
         "when": "editorHasDefinitionProvider && editorTextFocus"
     },
     {
-        "key": "ctrl+shift+d",
         "command": "-workbench.view.debug",
+        "key": "ctrl+shift+d",
         "when": "viewContainer.workbench.view.debug.enabled"
     },
     {
-        "key": "ctrl+shift+d",
         "command": "workbench.action.navigateBack",
+        "key": "ctrl+shift+d",
         "when": "canNavigateBack"
     },
     {
-        "key": "ctrl+alt+-",
         "command": "-workbench.action.navigateBack",
+        "key": "ctrl+alt+-",
         "when": "canNavigateBack"
     },
     {
-        "key": "ctrl+shift+b",
         "command": "-workbench.action.tasks.build",
+        "key": "ctrl+shift+b",
         "when": "taskCommandsRegistered"
     },
     {
-        "key": "ctrl+shift+b",
-        "command": "bazel.goToBuildFile"
+        "command": "bazel.goToBuildFile",
+        "key": "ctrl+shift+b"
     },
     {
-        "key": "ctrl+shift+c",
         "command": "-workbench.action.terminal.openNativeConsole",
+        "key": "ctrl+shift+c",
         "when": "!terminalFocus"
     },
     {
-        "key": "ctrl+shift+c",
         "command": "workbench.files.action.collapseExplorerFolders",
+        "key": "ctrl+shift+c",
         "when": "!terminalFocus"
     }
 ]
