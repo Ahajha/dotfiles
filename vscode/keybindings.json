@@ -67,5 +67,29 @@
         "command": "workbench.files.action.collapseExplorerFolders",
         "key": "ctrl+shift+c",
         "when": "!terminalFocus"
+    },
+    {
+        "command": "workbench.action.moveEditorToRightGroup",
+        "key": "ctrl+shift+r"
+    },
+    {
+        "command": "-editor.action.refactor",
+        "key": "ctrl+shift+r",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "command": "-rerunSearchEditorSearch",
+        "key": "ctrl+shift+r",
+        "when": "inSearchEditor"
+    },
+    {
+        "command": "-workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
+        "key": "ctrl+shift+r",
+        "when": "inQuickOpen && inRecentFilesPicker"
+    },
+    {
+        "command": "-workbench.action.tasks.rerunForActiveTerminal",
+        "key": "ctrl+shift+r",
+        "when": "taskTerminalActive && terminalFocus"
     }
 ]
