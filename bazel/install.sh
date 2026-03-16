@@ -19,6 +19,7 @@ function install() {
     command -v $1 || (curl -L --output ~/.local/bin/$1 $2 && chmod +x ~/.local/bin/$1)
 }
 
+mkdir -p ~/.local/bin
 install bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazelisk_version}/bazelisk-${arch}"
 install buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
 install buildozer "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildozer-${arch}"
@@ -26,7 +27,7 @@ install buildozer "https://github.com/bazelbuild/buildtools/releases/download/v$
 # Need a very recent version to support go-to-definition in newer bazel versions
 # Can go back to a prebuilt binary if >0.1.22 is released.
 cd $PWD/bazel/starpls
-bazel build -c opt --experimental_convenience_symlinks=normal //crates/starpls
+$HOME/.local/bin/bazel build -c opt --experimental_convenience_symlinks=normal //crates/starpls
 # This can fail if the server is already running somewhere else
 cp bazel-bin/crates/starpls/starpls ~/.local/bin/starpls || true
 cd - >/dev/null
@@ -35,4 +36,4 @@ rm -f ~/.local/bin/bazelisk
 ln -s ~/.local/bin/bazel ~/.local/bin/bazelisk
 
 mkdir -p downloads
-bazel help completion bash > downloads/bazel-complete.bash
+$HOME/.local/bin/bazel help completion bash > downloads/bazel-complete.bash

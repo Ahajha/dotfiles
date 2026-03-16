@@ -1,4 +1,4 @@
 set -euo pipefail
 
-rm ~/.gitconfig
+rm -f ~/.gitconfig
 ln -s $PWD/git/.gitconfig ~/.gitconfig
