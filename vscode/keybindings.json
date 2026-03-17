@@ -91,5 +91,14 @@
         "command": "-workbench.action.tasks.rerunForActiveTerminal",
         "key": "ctrl+shift+r",
         "when": "taskTerminalActive && terminalFocus"
+    },
+    {
+        "command": "-workbench.action.files.saveLocalFile",
+        "key": "ctrl+shift+s",
+        "when": "remoteFileDialogVisible"
+    },
+    {
+        "command": "-workbench.action.files.saveAs",
+        "key": "ctrl+shift+s"
     }
 ]
