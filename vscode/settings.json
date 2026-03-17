@@ -15,6 +15,7 @@
     "bazelrc.bazelVersion": "9.0.0",
     "C_Cpp.intelliSenseEngine": "disabled",
     "chat.agentsControl.enabled": false,
+    "chat.commandCenter.enabled": false,
     "diffEditor.experimental.showMoves": true,
     "diffEditor.experimental.useTrueInlineView": true,
     "diffEditor.hideUnchangedRegions.enabled": true,
