@@ -2,6 +2,9 @@
     "[cpp]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
+    "[markdown]": {
+        "editor.defaultFormatter": "rvben.rumdl"
+    },
     "[python]": {
         "editor.codeActionsOnSave": {
             "source.fixAll": "explicit",

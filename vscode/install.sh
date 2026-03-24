@@ -10,6 +10,7 @@ ms-python.python
 ms-python.vscode-pylance
 ms-python.vscode-python-envs
 ms-vscode.cpptools
+rvben.rumdl
 )
 
 for extension in ${extensions[@]}; do
