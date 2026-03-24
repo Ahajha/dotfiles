@@ -9,3 +9,11 @@ git clone --recurse-submodules https://github.com/Ahajha/dotfiles.git ~/dotfiles
 ```
 
 Because I forget frequently: To pull new submodules after already cloning, run `git submodule update --init`.
+
+## Manual steps
+
+After these steps, run a few more manual commands:
+
+```sh
+gh auth login
+```
