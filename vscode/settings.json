@@ -39,6 +39,7 @@
     "ruff.interpreter": [
         "python3"
     ],
+    "rumdl.fixOnSave": true,
     "search.followSymlinks": false,
     "search.sortOrder": "countDescending",
     "telemetry.telemetryLevel": "crash",
