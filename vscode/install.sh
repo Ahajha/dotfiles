@@ -8,7 +8,6 @@ bazelbuild.vscode-bazel
 charliermarsh.ruff
 llvm-vs-code-extensions.vscode-clangd
 ms-python.python
-ms-vscode.cpptools
 rvben.rumdl
 )
 
