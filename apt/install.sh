@@ -2,4 +2,5 @@
 
 sudo apt install -y \
     fzy \
-    gh
+    gh \
+    tree
