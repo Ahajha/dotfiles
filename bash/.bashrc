@@ -84,6 +84,13 @@ source /usr/share/bash-completion/completions/git
 complete -o bashdefault -o default -o nospace -F __git_wrap__git_main g
 complete -o bashdefault -o default -o nospace -F __git_wrap__git_main gi
 
+# some lazier git aliases
+alias gpr="g pr"
+alias gprd="g prd"
+alias gpl="g pl"
+alias gup="g up"
+alias gco="g co"
+
 export PATH="$PATH:$HOME/dotfiles/git/git-pile/bin"
 
 export GIT_PILE_PREFIX="trotta/"
