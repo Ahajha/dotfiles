@@ -29,6 +29,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.find.addExtraSpaceOnTop": false,
     "editor.formatOnSave": true,
+    "editor.renderLineHighlight": "none",
     "explorer.confirmDelete": false,
     "extensions.ignoreRecommendations": true,
     "files.insertFinalNewline": true,
