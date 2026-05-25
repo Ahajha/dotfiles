@@ -14,6 +14,9 @@
     },
     "bazel.buildifierFixOnFormat": true,
     "bazel.enableCodeLens": true,
+    "bazel.lsp.args": [
+        "--experimental_goto_definition_skip_re_exports"
+    ],
     "bazel.lsp.command": "starpls",
     "bazelrc.bazelVersion": "9.0.0",
     "C_Cpp.intelliSenseEngine": "disabled",
