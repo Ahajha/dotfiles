@@ -106,3 +106,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.npm-global/bin:$PATH"
 
 export PATH="$HOME/.pixi/bin:$PATH"
+eval "$(pixi completion --shell bash)"
