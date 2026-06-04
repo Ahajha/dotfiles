@@ -87,7 +87,7 @@ complete -o bashdefault -o default -o nospace -F __git_wrap__git_main gi
 # some lazier git aliases
 alias gpr="g pr"
 alias gprd="g prd"
-alias gpl="g pl"
+alias gpl="g pl --prune"
 alias gup="g up"
 alias gco="g co"
 
