@@ -4,6 +4,7 @@ set -euo pipefail
 
 readonly bazelisk_version=1.28.1
 readonly buildifier_version=8.5.1
+readonly starpls_version=0.1.24
 
 if [[ "$(uname -ms)" == "Linux x86_64" ]]; then
     readonly arch="linux-amd64"
@@ -22,14 +23,9 @@ mkdir -p ~/.local/bin
 install bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazelisk_version}/bazelisk-${arch}"
 install buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
 install buildozer "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildozer-${arch}"
-
-# Need a very recent version to support go-to-definition in newer bazel versions
-# Can go back to a prebuilt binary if >0.1.22 is released.
-cd $PWD/bazel/starpls
-$HOME/.local/bin/bazel build -c opt --experimental_convenience_symlinks=normal //crates/starpls
-# This can fail if the server is already running somewhere else
-cp bazel-bin/crates/starpls/starpls ~/.local/bin/starpls || true
-cd - >/dev/null
+# Kill in case instances are running
+pkill starpls
+install starpls "https://github.com/modular/starpls/releases/download/v${starpls_version}/starpls-${arch}"
 
 rm -f ~/.local/bin/bazelisk
 ln -s ~/.local/bin/bazel ~/.local/bin/bazelisk
