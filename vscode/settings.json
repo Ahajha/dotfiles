@@ -15,6 +15,7 @@
     "bazel.buildifierFixOnFormat": true,
     "bazel.enableCodeLens": true,
     "bazel.lsp.args": [
+        "server",
         "--experimental_goto_definition_skip_re_exports"
     ],
     "bazel.lsp.command": "starpls",
