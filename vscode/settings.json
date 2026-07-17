@@ -20,7 +20,6 @@
         "--experimental_infer_ctx_attributes"
     ],
     "bazel.lsp.command": "starpls",
-    "bazelrc.bazelVersion": "9.0.0",
     "C_Cpp.intelliSenseEngine": "disabled",
     "chat.agentsControl.enabled": false,
     "chat.commandCenter.enabled": false,
