@@ -16,7 +16,8 @@
     "bazel.enableCodeLens": true,
     "bazel.lsp.args": [
         "server",
-        "--experimental_goto_definition_skip_re_exports"
+        "--experimental_goto_definition_skip_re_exports",
+        "--experimental_infer_ctx_attributes"
     ],
     "bazel.lsp.command": "starpls",
     "bazelrc.bazelVersion": "9.0.0",
