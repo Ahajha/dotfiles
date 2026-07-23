@@ -1,3 +1,4 @@
+#!/bin/bash
 # Install misc bazel tools
 
 set -euo pipefail
@@ -16,7 +17,7 @@ fi
 function install() {
     # $1: command
     # $2: url to download
-    command -v $1 || (curl -L --output ~/.local/bin/$1 $2 && chmod +x ~/.local/bin/$1)
+    command -v "$1" >/dev/null || (curl -L --output "$HOME/.local/bin/$1" "$2" && chmod +x "$HOME/.local/bin/$1")
 }
 
 mkdir -p ~/.local/bin
@@ -31,4 +32,4 @@ rm -f ~/.local/bin/bazelisk
 ln -s ~/.local/bin/bazel ~/.local/bin/bazelisk
 
 mkdir -p downloads
-$HOME/.local/bin/bazel help completion bash > downloads/bazel-complete.bash
+"$HOME/.local/bin/bazel" help completion bash > downloads/bazel-complete.bash
