@@ -24,7 +24,7 @@ install bazel "https://github.com/bazelbuild/bazelisk/releases/download/v${bazel
 install buildifier "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildifier-${arch}"
 install buildozer "https://github.com/bazelbuild/buildtools/releases/download/v${buildifier_version}/buildozer-${arch}"
 # Kill in case instances are running
-pkill starpls
+pkill starpls || true
 install starpls "https://github.com/modular/starpls/releases/download/v${starpls_version}/starpls-${arch}"
 
 rm -f ~/.local/bin/bazelisk
