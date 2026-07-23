@@ -5,7 +5,7 @@ set -euo pipefail
 
 readonly bazelisk_version=1.28.1
 readonly buildifier_version=8.5.1
-readonly starpls_version=0.1.24
+readonly starpls_version=0.1.25
 
 if [[ "$(uname -ms)" == "Linux x86_64" ]]; then
     readonly arch="linux-amd64"
