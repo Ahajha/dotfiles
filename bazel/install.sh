@@ -3,8 +3,9 @@
 
 set -euo pipefail
 
-readonly bazelisk_version=1.28.1
-readonly buildifier_version=8.5.1
+readonly bazelisk_version=1.29.0
+# 8.5.1+ introduces `canonical-repository` which raises a ton of false positives
+readonly buildifier_version=8.2.1
 readonly starpls_version=0.1.25
 
 if [[ "$(uname -ms)" == "Linux x86_64" ]]; then
