@@ -70,8 +70,28 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     source /etc/bash_completion
 fi
 
+# bazel aliases
+alias bb="bazel build"
+alias bt="bazel test"
+alias br="bazel run"
+
+_bazel__complete_build() {
+    _bazel__complete_target_stdout build $@
+}
+_bazel__complete_test() {
+    _bazel__complete_target_stdout test $@
+}
+_bazel__complete_run() {
+    _bazel__complete_target_stdout run $@
+}
+
 if [ -f ~/dotfiles/downloads/bazel-complete.bash ]; then
     source ~/dotfiles/downloads/bazel-complete.bash
+
+    # autocomplete for the aliases
+    complete -F _bazel__complete_build -o nospace bb
+    complete -F _bazel__complete_test -o nospace bt
+    complete -F _bazel__complete_run -o nospace br
 fi
 
 ## custom stuff
