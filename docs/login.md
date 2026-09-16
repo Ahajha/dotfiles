@@ -24,6 +24,10 @@ sudo systemctl enable clevis-luks-askpass.path
 
 ## Fingerprint reader
 
+There's an obnoxious issue with the GNOME keyring that basically makes fingerprint
+login completely useless. So this is here for future reference if I want to try
+something that doesn't use the GNOME keyring.
+
 ```bash
 sudo apt install fprintd libpam-fprintd
 fprintd-enroll
