@@ -12,8 +12,8 @@
         },
         "editor.formatOnSave": true
     },
-    "bazel.buildifierFixOnFormat": true,
-    "bazel.enableCodeLens": true,
+    "bazel.buildifier.fixOnFormat": true,
+    "bazel.codeLens.enable": true,
     "bazel.lsp.args": [
         "server",
         "--experimental_goto_definition_skip_re_exports",
@@ -34,6 +34,9 @@
     "editor.renderLineHighlight": "none",
     "explorer.confirmDelete": false,
     "extensions.ignoreRecommendations": true,
+    "files.associations": {
+        "CODEOWNERS": "plaintext"
+    },
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -42,6 +45,7 @@
     "git.branchPrefix": "trotta/",
     "git.branchProtectionPrompt": "alwaysCommit",
     "git.confirmSync": false,
+    "git.enableStatusBarSync": false,
     "git.replaceTagsWhenPull": true,
     "git.suggestSmartCommit": false,
     "ruff.interpreter": [
