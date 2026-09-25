@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # fzy used for git-absorb
 
 sudo apt install -y \

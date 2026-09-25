@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # I don't do much (if any) node development, but in the rare case I do I want a sane setup
 
 set -euo pipefail

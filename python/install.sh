@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Misc python tools
 
 set -euo pipefail

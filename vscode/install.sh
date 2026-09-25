@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Can dump current extensions with `code --list-extensions`
 
 set -euo pipefail
