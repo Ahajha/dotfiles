@@ -70,6 +70,5 @@
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "workbench.sideBar.location": "right",
-    "workbench.startupEditor": "none",
-    "workbench.statusBar.visible": false
+    "workbench.startupEditor": "none"
 }
