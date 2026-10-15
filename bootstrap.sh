@@ -6,6 +6,7 @@ set -euo pipefail
 ./apt/install.sh
 ./bash/install.sh
 ./bazel/install.sh
+./cc/install.sh
 ./git/install.sh
 ./gnome/install.sh
 ./node/install.sh
