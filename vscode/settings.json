@@ -25,6 +25,8 @@
     "chat.agentsControl.enabled": false,
     "chat.commandCenter.enabled": false,
     "chat.disableAIFeatures": true,
+    "claudeCode.hideOnboarding": true,
+    "claudeCode.preferredLocation": "panel",
     "diffEditor.experimental.showMoves": true,
     "diffEditor.experimental.useTrueInlineView": true,
     "diffEditor.hideUnchangedRegions.enabled": true,
@@ -37,7 +39,6 @@
     "files.associations": {
         "CODEOWNERS": "plaintext"
     },
-    "workbench.experimental.modernUI": false,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -67,6 +68,7 @@
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.tabSizing": "fixed",
+    "workbench.experimental.modernUI": false,
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "workbench.sideBar.location": "right",
