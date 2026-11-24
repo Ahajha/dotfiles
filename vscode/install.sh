@@ -8,6 +8,7 @@ extensions=(
 astral-sh.ty
 bazelbuild.vscode-bazel
 charliermarsh.ruff
+fabiospampinato.vscode-open-in-github
 llvm-vs-code-extensions.vscode-clangd
 ms-python.python
 rvben.rumdl
