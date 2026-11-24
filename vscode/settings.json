@@ -12,6 +12,9 @@
         },
         "editor.formatOnSave": true
     },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "bazel.buildifier.fixOnFormat": true,
     "bazel.codeLens.enable": true,
     "bazel.lsp.args": [
